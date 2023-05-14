@@ -34,7 +34,7 @@ public class Pizza{
     m_cheeseTop = cheeseTop;
     m_pepTop = pepTop;
     m_vegTop = vegTop;
-    m_totalTop = cheeseTop + pepTop + cheeseTop; //ERROR switch to cheeseTop + pepTop + vegTop
+    m_totalTop = cheeseTop + pepTop + vegTop;
   }
 
   /**Copy constructor making a copy of a given pizza
@@ -52,7 +52,7 @@ public class Pizza{
   @return a String representing the size of the pizza
   */
   public String getSize(){
-    return m_totalTop; //ERROR set to return m_size
+    return m_size;
   }
 
   /**Accessor for the cheese toppings attribute
@@ -152,7 +152,7 @@ public class Pizza{
   @return boolean if Pizza and o are equal
   */
   public boolean equals(Object o){
-    if(this != o){ //ERROR switch != to ==
+    if(this == o){
       return true;
     }
     if(!(o instanceof Pizza)){
