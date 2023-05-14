@@ -19,7 +19,7 @@ public class PizzaOrder{
   @param int lengthOfOrder to make an order of a given size
   */
   public PizzaOrder(int lengthOfOrder){
-    m_order = new Pizza[0]; //ERROR make array size of lengthOfOrder
+    m_order = new Pizza[lengthOfOrder]; //ERROR make array size of lengthOfOrder
     m_numPizzas = 0;
   }
 
@@ -42,7 +42,7 @@ public class PizzaOrder{
         return 1;
     }
     else{
-      return 1; //ERROR switch to return -1
+      return -1; //ERROR switch to return -1
     }
   }
 
